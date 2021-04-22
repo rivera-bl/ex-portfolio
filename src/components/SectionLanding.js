@@ -13,7 +13,7 @@ const SectionLanding = () => {
                         <h2>your <span>dreams</span></h2>
                     </Hide>
                     <Hide>
-                        <h2>come true</h2>
+                        <h2>come true.</h2>
                     </Hide>
                 </div>
                 <p>Contact us for any lorem ipsum</p>
