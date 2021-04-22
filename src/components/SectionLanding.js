@@ -1,9 +1,9 @@
 import home1 from '../img/home1.png';
-import styled from 'styled-components';
+import {Container, Description, Image, Hide} from '../styles.js';
 
 const SectionLanding = () => {
     return (
-        <About>
+        <Container>
             <Description>
                 <div className="title">
                     <Hide>
@@ -22,40 +22,8 @@ const SectionLanding = () => {
                 <Image>
                     <img src={home1} alt="guy-camera"/>
                 </Image>
-        </About>
+        </Container>
     );
 };
-
-// styled-components
-const About = styled.div`
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 10rem;
-    color: white;
-`;
-
-const Description = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-  h2 {
-    font-weight: lighter;
-  }
-`;
-
-const Image = styled.div`
-  flex: 1;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`;
 
 export default SectionLanding;
