@@ -1,11 +1,13 @@
-import About from "./pages/About"
 import GlobalStyle from "./components/GlobalStyle"
+import Header from "./components/Header"
+import About from "./pages/About"
 
 function App() {
   return (
     <div className="App">
-        <About/>
         <GlobalStyle/>
+        <Header/>
+        <About/>
     </div>
   );
 }
